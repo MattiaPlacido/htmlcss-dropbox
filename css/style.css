@@ -29,6 +29,7 @@ a {
   padding: 10px 15px;
   width: fit-content;
   height: fit-content;
+  text-align: center;
 }
 
 .input-container {
@@ -75,7 +76,7 @@ a {
 
 .lower-header .container > h1 {
   font-size: 3rem;
-  margin: 20px;
+  margin: 20px 0;
   font-weight: 800;
 }
 
@@ -127,7 +128,6 @@ a {
 }
 
 .card-id {
-  border: black solid 1px;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -144,12 +144,8 @@ a {
 .card-body {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 30px;
   padding: 20px;
-}
-
-.card-list {
-  padding: 20px 0;
 }
 
 .card-list-item {
@@ -158,12 +154,22 @@ a {
   margin: 20px 0;
 }
 
+.card-list-item:first-child {
+  margin: 0;
+}
+
 .card-list .card-list-item > li {
   list-style: none;
 }
 
 .card .card-body .button {
   align-self: center;
+  width: 100%;
+}
+
+.card-body > hr {
+  width: 30%;
+  align-self: flex-start;
 }
 
 /* SPAM */
@@ -174,4 +180,16 @@ a {
 
 .opaque {
   opacity: 0.8;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.blue {
+  color: #126cff;
+}
+
+.bold {
+  font-weight: bold;
 }
