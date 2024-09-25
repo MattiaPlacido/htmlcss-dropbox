@@ -58,11 +58,11 @@ a {
   background-color: #b4d0e7;
   padding: 10px 0;
   position: relative;
-  min-height: 500px;
+  min-height: 600px;
 }
 
 .lower-header .container {
-  width: 900px;
+  width: 1200px;
   position: absolute;
   right: 0;
   left: 0;
@@ -92,10 +92,15 @@ a {
   max-width: 70%;
 }
 
+.lower-header .fa-solid {
+  position: absolute;
+  bottom: 110px;
+}
+
 /* MAIN */
 
 .main-section {
-  width: 900px;
+  width: 1000px;
   margin: 50px auto;
   display: flex;
   flex-direction: column;
@@ -117,9 +122,11 @@ a {
   border: black solid 1px;
   display: flex;
   flex-direction: column;
+  font-size: 0.9rem;
+  line-height: 20px;
 }
 
-.card-title {
+.card-id {
   border: black solid 1px;
   display: flex;
   justify-content: center;
@@ -127,6 +134,11 @@ a {
   width: 100%;
   gap: 10px;
   padding: 15px 0;
+}
+
+.card-title {
+  font-size: 1.4em;
+  font-weight: bold;
 }
 
 .card-body {
@@ -147,9 +159,11 @@ a {
 }
 
 .card-list .card-list-item > li {
-  font-size: 0.9rem;
-  line-height: 20px;
   list-style: none;
+}
+
+.card .card-body .button {
+  align-self: center;
 }
 
 /* SPAM */
