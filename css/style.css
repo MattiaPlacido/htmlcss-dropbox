@@ -85,6 +85,7 @@ a {
   flex-direction: column;
   gap: 30px;
   font-size: 0.9rem;
+  line-height: 20px;
 }
 
 .lower-header .image-container {
@@ -94,7 +95,7 @@ a {
 /* MAIN */
 
 .main-section {
-  width: 750px;
+  width: 900px;
   margin: 50px auto;
   display: flex;
   flex-direction: column;
@@ -105,8 +106,58 @@ a {
   margin-top: 100px;
 }
 
+.main-section .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  width: 30%;
+  border: black solid 1px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  border: black solid 1px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  gap: 10px;
+  padding: 15px 0;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+
+.card-list {
+  padding: 20px 0;
+}
+
+.card-list-item {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.card-list .card-list-item > li {
+  font-size: 0.9rem;
+  line-height: 20px;
+  list-style: none;
+}
+
 /* SPAM */
 .whitetxtbluebg {
   color: white;
   background-color: #126cff;
+}
+
+.opaque {
+  opacity: 0.8;
 }
