@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  /* outline: 2px solid green; */
 }
 
 a {
@@ -19,10 +20,6 @@ h2 {
 
 .item-container {
   display: flex;
-}
-
-.image-container {
-  object-fit: cover;
 }
 
 .button {
@@ -102,21 +99,22 @@ h2 {
 /* MAIN */
 
 .main-section {
-  width: 1100px;
   margin: 50px auto;
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
 
-.main-section .container:first-of-type {
+.main-section .container:first-child {
+  margin-top: 100px;
   gap: 20px;
   display: flex;
   flex-direction: column;
 }
 
-.main-section:first-child {
-  margin-top: 100px;
+.main-section .container {
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .main-section .card-container {
@@ -125,12 +123,80 @@ h2 {
   justify-content: space-between;
 }
 
+#brands {
+  display: flex;
+  margin: 0;
+  max-width: 100%;
+}
+
+#brands .container {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  max-width: 100%;
+}
+
+#brands .container .item-container {
+  width: 34%;
+}
+#side-brand-card .image-container {
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+  padding: 50px;
+}
+
+#main-brand-card {
+  background-color: #f5f5f5;
+  display: flex;
+  padding: 0 50px;
+  flex-direction: column;
+  font-size: 0.8rem;
+  line-height: 20px;
+}
+
+#main-brand-card > hr {
+  width: 30%;
+  color: grey;
+  align-self: flex-start;
+}
+
+#main-brand-card .image-container {
+  width: 40%;
+  height: 40%;
+  margin: 0;
+}
+
+#bottom-brand-card {
+  gap: 150px;
+  padding: 100px 0;
+}
+
+#bottom-brand-card .button {
+  padding: 10px 30px;
+  border: none;
+}
+
+#faq {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 0;
+}
+
+#faq .card-list-item {
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
 /* DUAL CONTAINER */
 
 .main-section .dual-container {
   display: flex;
   gap: 15px;
   margin: 30px auto;
+  max-width: 1100px;
 }
 
 .main-section .dual-container .image-container {
@@ -160,6 +226,10 @@ h2 {
 
 .size-small {
   width: 30%;
+}
+
+.size-athird {
+  width: 33%;
 }
 
 .card-id {
@@ -226,6 +296,31 @@ h2 {
 .blacktxtwhitebg {
   color: #292929;
   border: 1px solid #292929;
+  background-color: white;
+}
+
+.bgbrown {
+  background-color: brown;
+}
+
+.bggreen {
+  background-color: aquamarine;
+}
+
+.bgred {
+  background-color: red;
+}
+
+.bgblue {
+  background-color: #126cff;
+}
+
+.bglightblue {
+  background-color: #b4d0e7;
+}
+
+.brown {
+  color: rgb(102, 27, 27);
 }
 
 .opaque {
@@ -238,6 +333,10 @@ h2 {
 
 .blue {
   color: #126cff;
+}
+
+.white {
+  fill: white;
 }
 
 .bold {
@@ -253,4 +352,8 @@ h2 {
 
 .wrap {
   flex-wrap: wrap;
+}
+
+.centered {
+  margin: 0 auto;
 }
